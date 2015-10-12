@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">My Turn!</string>
+    <string name="action_change_lang">Change Language</string>
+    <string name="action_change_pass">Change Password</string>
+    <string name="action_watch_account">Watch Account</string>
+    <string name="action_show_pers">Watch People In Your Group</string>
+    <string name="action_new_pers">New Person</string>
+    <string name="action_show_task">Watch Tasks In Your Group</string>
+    <string name="action_new_task">New Task</string>
+    <string name="action_log_out">Log Out</string>
+</resources>

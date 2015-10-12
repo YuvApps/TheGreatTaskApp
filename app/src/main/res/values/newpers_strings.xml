@@ -1,0 +1,6 @@
+<resources>
+    <string name="newpers_title">Add Person Screen</string>
+    <string name="newpers_name">Name</string>
+    <string name="newpers_phone">Phone Number</string>
+    <string name="newpers_btn">Add Person</string>
+</resources>

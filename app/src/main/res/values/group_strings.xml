@@ -1,0 +1,6 @@
+<resources>
+    <string name="group_title">Groups Screen</string>
+    <string name="group_group">Enter Your Group</string>
+    <string name="group_enter">Enter</string>
+    <string name="group_create">Create New Group</string>
+</resources>

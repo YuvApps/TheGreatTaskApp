@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="watchacc_title">Watch Account Page</string>
+    <string name="watchacc_nametext">YourName</string>
+    <string name="watchacc_namebtn">Edit Name</string>
+    <string name="watchacc_passwordtext">YourPassword</string>
+    <string name="watchacc_passwordbtn">Edit Password</string>
+    <string name="watchacc_phonetext">YourPhone</string>
+    <string name="watchacc_phonebtn">Edit Phone</string>
+    <string name="watchacc_exitbtn">Done</string>
+</resources>

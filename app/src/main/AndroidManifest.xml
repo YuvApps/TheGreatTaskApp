@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.YuvApps.MyTurn">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.example.YuvApps.MyTurn.MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.YuvApps.MyTurn.Pages.GroupActivity" />
+        <activity
+            android:name="com.example.YuvApps.MyTurn.Pages.SignInActivity"
+            android:parentActivityName="com.example.YuvApps.MyTurn.Pages.GroupActivity"/>
+        <activity
+            android:name="com.example.YuvApps.MyTurn.Pages.SignOnActivity"
+            android:parentActivityName="com.example.YuvApps.MyTurn.Pages.GroupActivity"/>
+        <activity
+            android:name="com.example.YuvApps.MyTurn.Pages.MyPageActivity"
+            android:parentActivityName="com.example.YuvApps.MyTurn.Pages.SignInActivity"/>
+        <activity
+            android:name="com.example.YuvApps.MyTurn.Pages.ShwPersActivity"
+            android:parentActivityName="com.example.YuvApps.MyTurn.Pages.MyPageActivity"/>
+        <activity
+            android:name="com.example.YuvApps.MyTurn.Pages.ShwTaskActivity"
+            android:parentActivityName="com.example.YuvApps.MyTurn.Pages.MyPageActivity"/>
+        <activity
+            android:name="com.example.YuvApps.MyTurn.Pages.NewPersActivity"
+            android:parentActivityName="com.example.YuvApps.MyTurn.Pages.ShwPersActivity"/>
+        <activity
+            android:name="com.example.YuvApps.MyTurn.Pages.NewTaskActivity"
+            android:parentActivityName="com.example.YuvApps.MyTurn.Pages.ShwTaskActivity"/>
+        <activity
+            android:name="com.example.YuvApps.MyTurn.Pages.WatchAccActivity"
+            android:parentActivityName="com.example.YuvApps.MyTurn.Pages.MyPageActivity"/>
+        <activity
+            android:name="com.example.YuvApps.MyTurn.Pages.CustomizeActivity"
+            android:parentActivityName="com.example.YuvApps.MyTurn.Pages.WatchAccActivity"/>
+        <activity
+            android:name="com.example.YuvApps.MyTurn.Pages.PassChanActivity"
+            android:parentActivityName="com.example.YuvApps.MyTurn.Pages.WatchAccActivity"/>
+    </application>
+
+</manifest>

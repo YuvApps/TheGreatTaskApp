@@ -1,0 +1,7 @@
+<resources>
+    <string name="passchan_title">Change Password Screen</string>
+    <string name="passchan_old">Current Password</string>
+    <string name="passchan_new">New Password</string>
+    <string name="passchan_confirm">Confirm Password</string>
+    <string name="passchan_btn">Change Password</string>
+</resources>

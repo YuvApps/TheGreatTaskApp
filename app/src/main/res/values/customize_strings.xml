@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="customize_title">Change Your </string>
+    <string name="customize_old">Your Old </string>
+    <string name="customize_new">Your New </string>
+    <string name="customize_btn">Change </string>
+</resources>

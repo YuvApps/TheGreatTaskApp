@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">אפליקצית המטלות הגדולה</string>
+    <string name="action_change_lang">שנה שפה</string>
+    <string name="action_change_pass">שנה סיסמא</string>
+</resources>

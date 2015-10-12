@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lang_spinner">Choose Language:</string>
+    <string name="lang_eng">English</string>
+    <string name="lang_heb">Hebrew</string>
+</resources>

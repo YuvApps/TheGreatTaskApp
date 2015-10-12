@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="customize_title">שנה את </string>
+    <string name="customize_old">הישן</string>
+    <string name="customize_new">החדש</string>
+    <string name="customize_btn">שנה את </string>
+</resources>

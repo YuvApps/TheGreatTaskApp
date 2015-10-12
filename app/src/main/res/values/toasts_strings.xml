@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Group Page -->
+    <string name="t_group_invldna">Invalided Group</string>
+    <string name="t_group_noname">Please Insert The Name</string>
+    <string name="t_group_tolngna">The Name Is Too Long</string>
+    <string name="t_group_newhint">Enter New Group Name (Till 8 Chars)</string>
+    <string name="t_group_oldhint">Enter Your Group</string>
+    <string name="t_group_taken">This Group Name Is Already In Use</string>
+
+    <!-- Sign In Page -->
+
+    <!-- Sign On Page -->
+    <string name="t_signon_noname">Please Insert The Name</string>
+    <string name="t_signon_tolngna">The Name Is Too Long</string>
+    <string name="t_signon_nopass">Please Insert The Password</string>
+    <string name="t_signon_toshtpa">The Password Is Too Short</string>
+    <string name="t_signon_tolngpa">The Password Is Too Long</string>
+    <string name="t_signon_noconf">Please Insert The Confirm Password</string>
+    <string name="t_signon_invldco">The Confirm Password Is Invalided</string>
+    <string name="t_signon_nophne">Please Insert The Phone</string>
+    <string name="t_signon_invldph">The Phone Is Invalided</string>
+
+    <!-- My Page Page -->
+    <!-- Watch Account Page -->
+    <!-- Customize Page -->
+    <string name="t_customize_invldold">The First Entry Is Not Your Previous</string>
+
+    <!-- Password Changing Page -->
+    <string name="t_passchan_invldold">The First Entry Is Not Your Previous Password</string>
+    <string name="t_passchan_invldnew">The New Password Must Match The Confirm Password</string>
+
+    <!-- Show People Page -->
+    <!-- New Person Page -->
+    <!-- Show Tasks Page -->
+    <!-- New Task Page -->
+
+</resources>

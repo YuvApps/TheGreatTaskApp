@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lang_spinner">בחר שפה:</string>
+    <string-array name="lang_values">
+        <item>אנגלית</item>
+        <item>עברית</item>
+    </string-array>
+</resources>

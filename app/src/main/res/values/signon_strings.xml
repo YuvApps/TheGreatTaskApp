@@ -1,0 +1,8 @@
+<resources>
+    <string name="signon_title">Sign On Screen</string>
+    <string name="signon_btn">Sign The System</string>
+    <string name="signon_name">Your Name</string>
+    <string name="signon_password">Your Password (Min. 4 Chars)</string>
+    <string name="signon_passconfig">Confirm Your Password</string>
+    <string name="signon_phone">Your Phone Number</string>
+</resources>
