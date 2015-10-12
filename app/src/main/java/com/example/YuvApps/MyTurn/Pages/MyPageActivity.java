@@ -2,9 +2,10 @@ package com.example.YuvApps.MyTurn.Pages;
 
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.res.Configuration;
 import android.os.Bundle;
-import android.support.v7.app.*;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.AlertDialog;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -12,12 +13,25 @@ import android.view.MenuItem;
 import com.example.YuvApps.MyTurn.MainActivity;
 import com.example.YuvApps.MyTurn.R;
 
-import java.util.Locale;
-
 /**
  * Created by YuvApps on 25/09/15.
  */
 public class MyPageActivity extends AppCompatActivity {
+
+    DialogInterface.OnClickListener dialogClickListener = new DialogInterface.OnClickListener() {
+        @Override
+        public void onClick(DialogInterface dialog, int which) {
+            switch (which) {
+                case (DialogInterface.BUTTON_POSITIVE):
+                    MainActivity.setNewLocale(getApplicationContext(), getResources());
+                    Intent signinIntent = new Intent(getApplicationContext(), SignInActivity.class);
+                    startActivity(signinIntent);
+                    break;
+                case (DialogInterface.BUTTON_NEGATIVE):
+                    break;
+            }
+        }
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,7 +69,7 @@ public class MyPageActivity extends AppCompatActivity {
         } else {
 
             MenuInflater inflater = getMenuInflater();
-            inflater.inflate(R.menu.menu_logedin, menu);;
+            inflater.inflate(R.menu.menu_logedin, menu);
 
         }
 
@@ -68,12 +82,7 @@ public class MyPageActivity extends AppCompatActivity {
         switch (item.getItemId()) {
             case(R.id.action_change_lang):
 
-                if(getBaseContext().getResources().getConfiguration().locale != Locale.forLanguageTag("iw") &&
-                        getBaseContext().getResources().getConfiguration().locale != Locale.forLanguageTag("he") ) {
-                    MainActivity.setLocale("iw", this, getClass(), getBaseContext().getResources());
-                } else {
-                    MainActivity.setLocale("en", this, getClass(), getBaseContext().getResources());
-                }
+                MainActivity.setLang(this);
 
                 break;
             case(R.id.action_watch_account):
@@ -114,18 +123,4 @@ public class MyPageActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
-
-    DialogInterface.OnClickListener dialogClickListener = new DialogInterface.OnClickListener() {
-        @Override
-        public void onClick(DialogInterface dialog, int which) {
-            switch(which) {
-                case(DialogInterface.BUTTON_POSITIVE):
-                    Intent signinIntent = new Intent(getApplicationContext(), SignInActivity.class);
-                    startActivity(signinIntent);
-                    break;
-                case(DialogInterface.BUTTON_NEGATIVE):
-                    break;
-            }
-        }
-    };
 }

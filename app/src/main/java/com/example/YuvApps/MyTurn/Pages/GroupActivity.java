@@ -1,16 +1,21 @@
 package com.example.YuvApps.MyTurn.Pages;
 
-import android.content.*;
+import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.*;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.*;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
 
-import com.example.YuvApps.MyTurn.*;
 import com.example.YuvApps.MyTurn.DataTypes.GroupDetails;
+import com.example.YuvApps.MyTurn.MainActivity;
+import com.example.YuvApps.MyTurn.R;
 
 /**
  * Created by YuvApps on 25/09/15.
@@ -37,6 +42,8 @@ public class GroupActivity extends AppCompatActivity {
 
         switch (item.getItemId()) {
             case(R.id.action_change_lang):
+
+                MainActivity.setLang(this);
 
                 break;
 
@@ -83,6 +90,7 @@ public class GroupActivity extends AppCompatActivity {
 
             if (mainGroup != null) {
 
+                MainActivity.setNewLocale(getApplicationContext(), getResources());
                 Intent signInIntent = new Intent(getApplicationContext(), SignInActivity.class);
                 signInIntent.putExtra("group_name", mainGroup.getName());
                 signInIntent.putExtra("group_users_table", mainGroup.getUsersTableName());
