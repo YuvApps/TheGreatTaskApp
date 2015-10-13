@@ -1,2 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="passchan_title">מסך שינוי סיסמא</string>
+    <string name="passchan_old">סיסמתך הנוכחית</string>
+    <string name="passchan_new">סיסמתך החדשה</string>
+    <string name="passchan_confirm">אשר סיסמא</string>
+    <string name="passchan_btn">שנה סיסמא</string>
+</resources>

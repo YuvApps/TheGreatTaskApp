@@ -1,2 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="signon_title">מסך הרשמה</string>
+    <string name="signon_btn">הרשם למערכת</string>
+    <string name="signon_name">שמך</string>
+    <string name="signon_password">סיסמתך (מינימום 4 תווים)</string>
+    <string name="signon_passconfig">אשר את סיסמתך</string>
+    <string name="signon_phone">מספר הטלפון שלך</string>
+</resources>

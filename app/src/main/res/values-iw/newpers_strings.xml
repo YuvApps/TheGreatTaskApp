@@ -1,2 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="newpers_title">מסך הוספת אדם</string>
+    <string name="newpers_name">שם</string>
+    <string name="newpers_phone">מספר טלפון</string>
+    <string name="newpers_btn">הוסף בן אדם</string>
+</resources>

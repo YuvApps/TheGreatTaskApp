@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">אפליקצית המטלות הגדולה</string>
+    <string name="app_name">My Turn!</string>
     <string name="action_change_lang">שנה שפה</string>
     <string name="action_change_pass">שנה סיסמא</string>
+    <string name="action_watch_account">צפה בחשבונך</string>
+    <string name="action_show_pers">צפה ברשימת האנשים בקבוצתך</string>
+    <string name="action_new_pers">הוסף אדם</string>
+    <string name="action_show_task">צפה ברשימת המטלות בקבוצתך</string>
+    <string name="action_new_task">מטלה חדשה</string>
+    <string name="action_log_out">התנתק</string>
+    <string name="pref_lang_key">LangKey</string>
 </resources>

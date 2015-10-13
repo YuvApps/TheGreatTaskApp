@@ -1,2 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="newtask_title">מסך הוספת מטלה</string>
+    <string name="newtask_name">שם המטלה</string>
+    <string name="newtask_cb">האם דורש תור?</string>
+    <string name="newtask_btn">הוסף מטלה</string>
+</resources>

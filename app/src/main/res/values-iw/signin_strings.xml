@@ -1,2 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="signin_title">מסך התחברות</string>
+    <string name="signin_name">שם</string>
+    <string name="signin_password">סיסמא</string>
+    <string name="signin_btn">כנס למערכת</string>
+</resources>
