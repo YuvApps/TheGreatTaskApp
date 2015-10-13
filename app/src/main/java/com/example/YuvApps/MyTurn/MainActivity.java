@@ -16,17 +16,15 @@ public class MainActivity extends AppCompatActivity {
 
     private static String strLanguage;
 
-    private static String getLang(Context currContext) {
+    private static void getLang(Context currContext) {
 
         SharedPreferences preferences = currContext.getSharedPreferences(currContext.getString(R.string.pref_lang_key), Context.MODE_WORLD_WRITEABLE);
 
         if (!preferences.contains("KeyLang")) {
-            return null;
+            strLanguage = "en";
+        } else {
+            strLanguage = preferences.getString("KeyLang", "en");
         }
-
-        String currLang = preferences.getString("KeyLang", "en");
-
-        return currLang;
     }
 
     public static void setLang(Context currContext) {
