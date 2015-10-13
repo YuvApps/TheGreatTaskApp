@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Group Page -->
-    <string name="t_group_invldna">Invalided Group</string>
-    <string name="t_group_noname">Please Insert The Name</string>
-    <string name="t_group_tolngna">The Name Is Too Long</string>
-    <string name="t_group_newhint">Enter New Group Name (Till 8 Chars)</string>
-    <string name="t_group_oldhint">Enter Your Group</string>
-    <string name="t_group_taken">This Group Name Is Already In Use</string>
+    <string name="t_group_invldna">קבוצה לא מוכרת</string>
+    <string name="t_group_noname">הכנס בבקשה את השם</string>
+    <string name="t_group_tolngna">השם ארוך מידיי</string>
+    <string name="t_group_newhint">הכנס את שם הקבוצה החדשה (עד 8 תווים)</string>
+    <string name="t_group_oldhint">הכנס את שם הקבוצה שלך</string>
+    <string name="t_group_taken">שם קבוצה זה כבר תפוס</string>
 
     <!-- Sign In Page -->
 

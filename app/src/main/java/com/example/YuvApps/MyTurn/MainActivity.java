@@ -22,6 +22,8 @@ public class MainActivity extends AppCompatActivity {
 
         if (!preferences.contains("KeyLang")) {
             strLanguage = "en";
+            currContext.getSharedPreferences(currContext.getString(R.string.pref_lang_key), Context.MODE_WORLD_WRITEABLE)
+                    .edit().putString("KeyLang", strLanguage).commit();
         } else {
             strLanguage = preferences.getString("KeyLang", "en");
         }

@@ -55,7 +55,7 @@ public class GroupActivity extends AppCompatActivity {
                 btnEnter.setVisibility(View.VISIBLE);
                 regGroup.setHint(R.string.t_group_oldhint);
                 regGroup.setText("");
-                txtTitle.setText("Groups Screen");
+                txtTitle.setText(R.string.group_title);
 
                 ActionBar mainActionBar = getSupportActionBar();
                 mainActionBar.setDisplayHomeAsUpEnabled(false);
@@ -116,7 +116,7 @@ public class GroupActivity extends AppCompatActivity {
             btnEnter.setVisibility(View.INVISIBLE);
             regGroup.setHint(R.string.group_create);
             regGroup.setText("");
-            txtTitle.setText("Create Group Screen");
+            txtTitle.setText(R.string.group_ctitle);
 
             ActionBar mainActionBar = getSupportActionBar();
             mainActionBar.setDisplayHomeAsUpEnabled(true);

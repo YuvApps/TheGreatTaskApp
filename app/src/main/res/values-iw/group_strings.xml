@@ -3,5 +3,6 @@
     <string name="group_title">מסך הקבוצות</string>
     <string name="group_group">הכנס את שם הקבוצה שלך</string>
     <string name="group_enter">היכנס</string>
+    <string name="group_ctitle">מסך יצירת קבוצה</string>
     <string name="group_create">צור קבוצה חדשה</string>
 </resources>
