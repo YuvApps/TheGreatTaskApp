@@ -1,8 +1,10 @@
 package com.example.YuvApps.MyTurn.Pages;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -21,6 +23,25 @@ import com.example.YuvApps.MyTurn.R;
  * Created by YuvApps on 25/09/15.
  */
 public class GroupActivity extends AppCompatActivity {
+
+    GroupDetails mainGroup;
+    DialogInterface.OnClickListener dialogClickListener = new DialogInterface.OnClickListener() {
+        @Override
+        public void onClick(DialogInterface dialog, int which) {
+            switch (which) {
+                case (DialogInterface.BUTTON_POSITIVE):
+                    MainActivity.setNewLocale(getApplicationContext(), getResources());
+                    Intent signOnIntent = new Intent(getApplicationContext(), SignOnActivity.class);
+                    signOnIntent.putExtra("group_name", mainGroup.getName());
+                    signOnIntent.putExtra("group_users_table", mainGroup.getUsersTableName());
+                    signOnIntent.putExtra("group_tasks_table", mainGroup.getTasksTasleName());
+                    startActivity(signOnIntent);
+                    break;
+                case (DialogInterface.BUTTON_NEGATIVE):
+                    break;
+            }
+        }
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -86,7 +107,7 @@ public class GroupActivity extends AppCompatActivity {
 
         } else {
 
-            GroupDetails mainGroup = GroupDetails.getGroupLineByName(groupName);
+            mainGroup = GroupDetails.getGroupLineByName(groupName);
 
             if (mainGroup != null) {
 
@@ -130,19 +151,17 @@ public class GroupActivity extends AppCompatActivity {
 
             } else {
 
-                GroupDetails createdGroup = new GroupDetails(regGroup.getText().toString());
+                mainGroup = new GroupDetails(regGroup.getText().toString());
 
-                if(!createdGroup.createTables()) {
+                if (!mainGroup.createTables()) {
 
                     Toast.makeText(getApplicationContext(), R.string.t_group_taken, Toast.LENGTH_LONG).show();
 
                 } else {
 
-                    Intent signOnIntent = new Intent(getApplicationContext(), SignOnActivity.class);
-                    signOnIntent.putExtra("group_name", createdGroup.getName());
-                    signOnIntent.putExtra("group_users_table", createdGroup.getUsersTableName());
-                    signOnIntent.putExtra("group_tasks_table", createdGroup.getTasksTasleName());
-                    startActivity(signOnIntent);
+                    AlertDialog.Builder builder = new AlertDialog.Builder(this);
+                    builder.setMessage(R.string.alert_creategroup_mes).setPositiveButton(R.string.alert_yes, dialogClickListener)
+                            .setNegativeButton(R.string.alert_cencel, dialogClickListener).show();
 
                 }
             }

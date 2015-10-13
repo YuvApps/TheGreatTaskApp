@@ -111,8 +111,8 @@ public class MyPageActivity extends AppCompatActivity {
             case(R.id.action_log_out):
 
                 AlertDialog.Builder builder = new AlertDialog.Builder(this);
-                builder.setMessage("Are You Sure You Want To LogOut?").setPositiveButton("Yes", dialogClickListener)
-                        .setNegativeButton("Cencel", dialogClickListener).show();
+                builder.setMessage(R.string.alert_logout_mes).setPositiveButton(R.string.alert_yes, dialogClickListener)
+                        .setNegativeButton(R.string.alert_cencel, dialogClickListener).show();
 
                 break;
 
